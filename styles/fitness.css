@@ -71,7 +71,7 @@ nav div > p {
 
 /* Banner desing */
 .banner {
-  max-width: 1240px;
+  max-width: 1060px;
   margin: 0 auto;
 
   display: flex;
@@ -139,6 +139,72 @@ nav div > p {
 .tooltip-2 p {
   font-size: 13px;
 }
+
+
+   /* Traing section */
+
+.traning-section{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.traing-heading{
+ 
+ max-width: 1060px;
+ margin: 0 auto;
+}
+.traing-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  
+}
+.traing-rules{
+  max-width: 671px;
+}
+.traing-rules>h1{
+  font-size: 3rem;
+  font-weight: black;
+  margin-bottom: 14px;
+}
+.traing-rules>p{
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 58px;
+}
+.traing-container >div{
+  position: relative;
+
+}
+.traing-container > div >p{
+  position: absolute;
+  z-index: 50;
+  top: 70%;
+  left: 5%;
+  font-size: 14px;
+}
+
+.traing-container img{
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+.box2{
+  grid-column:2 / span 2;
+
+}
+.box4{
+  grid-column: 1 /  3;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 576px) {
   nav > div {
