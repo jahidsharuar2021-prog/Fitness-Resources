@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  background-color: #111111;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
+/* Navbar design */
+nav {
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-top: 57px;
+  display: flex;
+  justify-content: space-between;
+}
+nav > p {
+  color: #e6533c;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  font-style: italic;
+  padding-left: 5px;
+}
+nav > div {
+  border: 1px solid rgba(62, 61, 61, 0.885);
+  border-radius: 20px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  gap: 47px;
+}
+/* My all Button */
+#btn-gap {
+  display: flex;
+  gap: 14px;
+}
+
+.btn {
+  background-color: #e6533c;
+  padding: 8px 20px;
+  border-radius: 46px;
+  border: none;
+}
+.black-btn {
+  background-color: #111111;
+  border: none;
+  padding: 16px 40px;
+  border: 1px solid #ffffff;
+  border-radius: 42px;
+  font-size: 1.1rem;
+  font-weight: 600px;
+}
+.big-btn {
+  background-color: #e6533c;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 42px;
+  font-size: 1.1rem;
+  font-weight: 600px;
+}
+nav div > p {
+  font-size: 1.2rem;
+}
+.menu {
+  display: none;
+}
+
+/* Banner desing */
+.banner {
+  max-width: 1240px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  margin-top: 33px;
+}
+.left-banner {
+  width: 50%;
+  max-width: 600px;
+}
+.left-banner > h1 {
+  font-size: 4rem;
+  font-weight: black;
+  color: #ffffff;
+}
+.left-banner > p {
+  font-size: 1rem;
+  line-height: 24px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.right-banner {
+  /* border: 1px solid red; */
+  width: 50%;
+  vertical-align: middle;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.right-banner img {
+  max-width: 350px;
+  vertical-align: middle;
+}
+.tooltip-1 {
+  width: 193px;
+  height: 98px;
+  padding: 17px 24px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  right: -10%;
+  top: 17%;
+  border-radius: 12px;
+}
+.tooltip-1 p {
+  font-size: 13px;
+}
+
+.tooltip-2 {
+  width: 206px;
+  height: 96px;
+  padding: 17px 24px;
+  position: absolute;
+  background-color: rgba(48, 48, 48, 0.54);
+  left: 23%;
+  top: 70%;
+  border-radius: 12px;
+  display: flex;
+}
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+}
+.tooltip-2 p {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 576px) {
+  nav > div {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+    padding-right: 25px;
+    border: none;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .left-banner {
+    width: 100%;
+  }
+}
